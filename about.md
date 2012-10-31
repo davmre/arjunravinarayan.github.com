@@ -1,3 +1,6 @@
 ---
-layout:page
-title: About: Arjun Narayan
+layout: page
+title: "About me"
+description: ""
+---
+I am me.
