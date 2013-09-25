@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Blog"
-description: "I can't imagine why you would actually be reading this"
+group: navigation
 ---
 
 <ul>
