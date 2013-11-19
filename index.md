@@ -12,5 +12,3 @@ group: navigation
     </li>
   {% endfor %}
 </ul>
-
- [academic page](http://cis.upenn.edu/~narayana).
