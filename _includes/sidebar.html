@@ -1,7 +1,7 @@
 <! -- sidebar.html -->
 <header class="sidebar-header" role="banner">
 	<a href="{% if site.BASE_PATH %}{{ site.BASE_PATH }}{% else %}/{% endif %}">
-		<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" />
+		<img src="{% if site.BASE_PATH %}{{ site.BASE_PATH }}{% else %}/{% endif %}headerpic" class="img-circle" />
 	</a>
 	<h3 class="title">
         <a href="{% if site.BASE_PATH %}{{ site.BASE_PATH }}{% else %}/{% endif %}">{{ site.title }}</a>
