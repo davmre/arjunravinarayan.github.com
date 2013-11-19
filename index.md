@@ -1,6 +1,16 @@
 ---
 layout: page
+group: navigation
 ---
-{% include JB/setup %}
 
-Hello world. For now this is incomplete. My only web presence is my [academic page](http://cis.upenn.edu/~narayana).
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+ [academic page](http://cis.upenn.edu/~narayana).
