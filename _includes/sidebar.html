@@ -56,11 +56,23 @@
 		{% if site.author.resume %}
 		<li>
 			<a class="btn btn-default btn-sm" href="http://www.cis.upenn.edu/~narayana/arjunnarayan_cv.pdf">
-				<i class="fa fa-file fa-lg"></i>
+				<i class="fa fa-indent fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 		<!-- LOL Modularity -->
+		<li>
+		       <a class="btn btn-default btn-sm"
+		href="{% if site.BASE_PATH %}{{ site.BASE_PATH }}{% else %}/{% endif %}atom.xml">
+			 <i class="fa fa-rss fa-lg"></i>
+		       </a>
+		</li>
+		<li>
+		  <a class="btn btn-default btn-sm"
+		     href="{% if site.BASE_PATH %}{{ site.BASE_PATH }}{% else %}/{% endif %}about.html">
+		    <i class="fa fa-question-circle fa-lg"></i>
+		  </a>
+		</li>
 	</ul>
 </div>
 

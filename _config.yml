@@ -12,7 +12,6 @@ paginate_path: "page:num"
 # so be sure to set them if your theme uses them.
 #
 title : Arjun Narayan
-tagline: 
 author :
   name : Arjun Narayan
   email : contact@arjunnarayan.com
@@ -24,6 +23,7 @@ author :
 
 BASE_PATH: /
 
+about_path : about.html
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -77,7 +77,7 @@ JB :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change theme here if needed.
   #
-  archive_path: archive.html
+  archive_path : archive.html
   categories_path : categories.html
   tags_path : tags.html
 
