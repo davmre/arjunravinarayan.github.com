@@ -11,14 +11,13 @@ paginate_path: "page:num"
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Arjun Narayan
+title : Dave Moore
 author :
-  name : Arjun Narayan
-  email : contact@arjunnarayan.com
-  github : arjunravinarayan
-  twitter : narayanarjun
-  resume : arjunnarayan_cv
-  bio : real computer scientist, fake economist
+  name : Dave Moore
+  email : dmoore@cs.berkeley.edu
+  github : davmre
+  twitter : davmre
+  bio : 
   email_md5 : 02e3bfce08a2adca1e733e68eb51f4e6
 
 BASE_PATH: /
