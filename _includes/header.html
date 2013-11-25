@@ -31,13 +31,15 @@
 <script type="text/javascript">
 MathJax.Hub.Config({
     tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
         inlineMath: [ ['$','$'], ['\\(','\\)'] ]
-    }
+    },
+ TeX: {
      Macros: {
-      R: "{\\mathcal{R}",
-      v: ["\\mathbf{#1}",1]
+      v: ["\\mathbf{#1}",1],
+      R: "\\mathcal{R}",
     }
+  }
 });
 
 MathJax.Hub.Queue(function() {
