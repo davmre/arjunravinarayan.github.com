@@ -1,6 +1,6 @@
 ---
 layout: post
-category: python,numpy
+category: python
 title: "Orthogonal polynomial regression in Python"
 ---
 
