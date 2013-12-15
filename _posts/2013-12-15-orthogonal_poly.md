@@ -37,7 +37,7 @@ def ortho_poly_fit(x, degree = 1):
     Z = raw / np.sqrt(norm2)
     return Z, norm2, alpha
 
-def ortho_poly_predict(x, alpha, norm2, degree=1):
+def ortho_poly_predict(x, alpha, norm2, degree = 1):
     x = np.asarray(x).flatten()
     n = degree + 1
     Z = np.empty((len(x), n))
