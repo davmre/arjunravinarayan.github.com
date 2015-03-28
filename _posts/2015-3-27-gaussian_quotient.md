@@ -52,5 +52,5 @@ number! (the determinant `$|A-B|$` will be negative, so its square root
 is imaginary). Doing the derivation from scratch for the quotient case
 yields the correct normalization constant `$\beta$`, given above.
 
-[^1]: Notation
+[^1]: Notation: let  denote a multivariate Gaussian density in the variable `$x$` with mean `$a$` and covariance matrix `$A$`.
 [^2]: I first saw this in the late Sam Roweis' [notes on Gaussian identities](http://www.cs.nyu.edu/~roweis/notes/gaussid.pdf).
