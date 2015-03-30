@@ -16,7 +16,7 @@ an (unnormalized) Gaussian in the same variable,
 C = \left(A^{-1} + B^{-1}\right)^{-1}\\
 c = C\left(A^{-1}a + B^{-1}b\right)\\
 \alpha = N(a; b, A+B).\]`The precision matrices add, the means are averaged weighted
-by precision, and interestingly the normalizing constant `$\alpha$` is *also* in
+by precision, and (surprisingly?) the normalizing constant `$\alpha$` is *also* in
 the form of a Gaussian density. All of this is straightforward, though annoying, to prove, just by
 expanding out the product of the two densities,
 [completing the square](https://learnbayes.org/index.php?option=com_content&view=article&id=77:completesquare&catid=83&Itemid=479&showall=&limitstart=1),
@@ -30,12 +30,11 @@ where a newly-updated Gaussian approximate posterior is divided by the previous 
 to get the "message" that would have transformed the latter into the former. It turns out the result is
 `\[\frac{N(x; a, A)}{N(x; b, B)} = \beta \cdot N(x; d, D)\\ D = \left(A^{-1} - B^{-1}\right)^{-1}\\ d = D\left(A^{-1}a - B^{-1}b\right)\\ \beta = \frac{|B|}{|B-A|}\frac{1}{N(a; b, B-A)}.\]`
 Note that the form of the message---the mean and covariance
-`$(d, D)$`---is the same as you would have gotten by plugging in a
-*negative* covariance matrix `$-B$` to the product formula above. This
-follows directly from the standard exponential identity `$1/e^x = e^{-x}$`. A
-Gaussian with negative-definite covariance is kind of a weird
-beast: it's essentially a bell curve opening upwards instead of
-downward, so it can't be normalized and is not a valid probability density, but
+`$(d, D)$`---is the same as you would have gotten by plugging in the negated covariance `$-B$` to the product formula above. This
+follows directly from the standard identity `$1/e^x = e^{-x}$`. A
+Gaussian with negative-definite covariance matrix is kind of a weird
+beast: the bell curve opens upwards instead of
+downwards, so it can't be normalized and is not a valid probability density, but
 we can treat it as a formal object that "cancels out" a certain amount
 of observation. If I have a Gaussian belief about some quantity, and
 then observe that quantity with negative-variance Gaussian noise, I am
