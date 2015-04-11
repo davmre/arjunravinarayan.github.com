@@ -30,10 +30,9 @@ where a newly-updated Gaussian approximate posterior is divided by the previous 
 to get the "message" that would have transformed the latter into the former. It turns out the result is
 `\[\frac{N(x; a, A)}{N(x; b, B)} = \beta \cdot N(x; d, D)\\ D = \left(A^{-1} - B^{-1}\right)^{-1}\\ d = D\left(A^{-1}a - B^{-1}b\right)\\ \beta = \frac{|B|}{|B-A|}\frac{1}{N(a; b, B-A)}.\]`
 Note that the form of the message---the mean and covariance
-`$(d, D)$`---is the same as you would have gotten by plugging in the negated covariance `$-B$` to the product formula above. This
-follows directly from the standard identity `$1/e^x = e^{-x}$`. A
-Gaussian with negative-definite covariance matrix is kind of a weird
-beast: the bell curve opens upwards instead of
+`$(d, D)$`---is the same as you would have gotten by plugging in the negated covariance `$-B$` to the product formula above, i.e., if you had multiplied by a Gaussian density with *negative variance*. This
+follows directly from the standard identity `$1/e^x = e^{-x}$`.
+A Gaussian with negative variance (or more generally, a negative-definite covariance matrix) is kind of a weird beast: the bell curve opens upwards instead of
 downwards, so it can't be normalized and is not a valid probability density, but
 we can treat it as a formal object that "cancels out" a certain amount
 of observation. If I have a Gaussian belief about some quantity, and
