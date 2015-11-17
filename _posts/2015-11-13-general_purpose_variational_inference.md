@@ -27,7 +27,7 @@ Note the only assumption we've made about the model is that we have access to gr
 
 If model gradients are not available, it's still possible to estimate the ELBO gradient using a trick from reinforcement learning, described in the paper [Black Box Variational Inference](http://arxiv.org/abs/1401.0118). However, this estimate is higher-variance, so optimization will converge much more slowly than when model gradients are available. 
 
-[^1]: This trick was introduced by [Kingma, Salimans, and Welling](http://arxiv.org/abs/1506.02557) in the context of variational autoencoders, and explored in more depth in a [nice post by Shakir Mohamed](http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/).
+[^1]: This trick was introduced by [Kingma, Salimans, and Welling](http://arxiv.org/abs/1506.02557) in the context of variational autoencoders, though also independently proposed by several others around the same time. Shakir Mohamed has a [nice post](http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/) that goes into more depth on the history and applicability of this trick.
 
 <script src="//platform.twitter.com/widgets.js" charset="utf-8" >
 </script >
