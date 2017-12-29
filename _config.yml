@@ -20,7 +20,7 @@ author :
   bio : 
   email_md5 : 02e3bfce08a2adca1e733e68eb51f4e6
 
-BASE_PATH: /
+BASE_PATH: /blog/
 
 about_path : about.html
 
@@ -32,7 +32,7 @@ about_path : about.html
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://davmre.github.io
+production_url : http://davmre.github.io/blog/
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
