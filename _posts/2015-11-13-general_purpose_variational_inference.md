@@ -4,7 +4,7 @@ category: inference
 title: "General purpose variational inference"
 ---
 
-In the [previous post]({{ BASE_PATH }}{% post_url 2015-11-13-elbo-in-5min %}) I derived the evidence lower bound (ELBO),
+In the [previous post]({{ site.production_url }}{% post_url 2015-11-13-elbo-in-5min %}) I derived the evidence lower bound (ELBO),
 `\[\mathcal{F}(\lambda; x) = \int q(z;\lambda) \left[\log p(x,z) - \log q(z;\lambda)\right]dz ,\]`
 which variational inference attempts to maximize. Now I'll describe a method to perform this maximization using only the model gradient $\nabla_z \log p(x, z)$. 
 
